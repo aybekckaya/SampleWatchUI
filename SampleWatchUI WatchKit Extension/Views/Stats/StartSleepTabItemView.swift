@@ -1,17 +1,18 @@
 //
-//  SleepButtonView.swift
+//  StartSleepTabItemView.swift
 //  SampleWatchUI WatchKit Extension
 //
-//  Created by aybek can kaya on 12.01.2022.
+//  Created by aybek can kaya on 27.01.2022.
 //
 
 import SwiftUI
 
 private struct SleepNowButton: View {
+
     let edgeSize: CGFloat
     let animationDuration: Double
-    @Binding var isAnimatingTap: Bool
-    @EnvironmentObject var viewModel: SleepLogViewModel
+    @Binding var isAnimatingDismiss: Bool
+    @EnvironmentObject var environment: SleepEnvironmentModel
 
     var body: some View {
         CircularAppButton(configuration: .init(title: "Sleep\nNow",
@@ -20,15 +21,17 @@ private struct SleepNowButton: View {
                                                titleColor: .whiteColor,
                                                backgroundColor: .grayColor,
                                                requiresOuterCircle: true, action: {
-            self.viewModel.currentViewState = .sleepLogView
-            self.viewModel.startListening()
+            self.isAnimatingDismiss = false
+            self.environment.setMainViewState(.sleepLog)
+            self.environment.startListening()
         }))
     }
 }
 
 private struct SleepNowMessageView: View {
-    @Binding var isAnimating: Bool
+    @Binding var isAnimatingDismiss: Bool
     let animationDuration: Double
+
     var body: some View {
         VStack {
             Text("If you sleep now it is good. If you sleep now it is good. If you sleep now it is good")
@@ -36,31 +39,31 @@ private struct SleepNowMessageView: View {
                 .fontWeight(.regular)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.whiteColor)
-                .opacity(isAnimating ? 0.0 : 1.0)
-                .animation(.easeInOut(duration: animationDuration), value: isAnimating)
+                .opacity(isAnimatingDismiss ? 0.0 : 1.0)
+                .animation(.easeInOut(duration: animationDuration), value: isAnimatingDismiss)
                 .padding()
         }
     }
 }
 
-struct SleepNowTabItemView: View {
+struct StartSleepTabItemView: View {
     private let animationDuration: Double = 1.0
-    @EnvironmentObject var viewModel: SleepLogViewModel
-    @State private var isAnimating = false
+    @State private var isAnimatingDismiss = false
 
     var body: some View {
         ScrollView(.vertical, showsIndicators: true) {
             VStack {
-                SleepNowButton(edgeSize: 100, animationDuration: animationDuration, isAnimatingTap: $isAnimating)
-                SleepNowMessageView(isAnimating: $isAnimating, animationDuration: animationDuration)
+                SleepNowButton(edgeSize: 100, animationDuration: animationDuration, isAnimatingDismiss: $isAnimatingDismiss)
+                SleepNowMessageView(isAnimatingDismiss: $isAnimatingDismiss, animationDuration: animationDuration)
             }
+        }.onAppear {
+            isAnimatingDismiss = false
         }
     }
 }
 
-
-struct SleepButtonView_Previews: PreviewProvider {
+struct StartSleepTabItemView_Previews: PreviewProvider {
     static var previews: some View {
-        SleepNowTabItemView().environmentObject(SleepLogViewModel.init())
+        StartSleepTabItemView().environmentObject(SleepEnvironmentModel())
     }
 }

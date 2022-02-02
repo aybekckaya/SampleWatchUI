@@ -9,11 +9,15 @@ import SwiftUI
 
 @main
 struct SampleWatchUIApp: App {
+    private static let environment = SleepEnvironmentModel()
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
-                    .environmentObject(SleepLogViewModel.init())
+                MainView()
+                    .environmentObject(SampleWatchUIApp.environment)
+                    .onAppear {
+                        SampleWatchUIApp.environment.initialize()
+                    }
             }
         }
 

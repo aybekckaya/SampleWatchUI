@@ -7,27 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A30D31DA27A82F8900ACD832 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D31D927A82F8900ACD832 /* URL+Extensions.swift */; };
+		A30D31DC27A843B300ACD832 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D31DB27A843B300ACD832 /* LogManager.swift */; };
 		A32A6D92278F411C00E11F27 /* StatsTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A6D91278F411C00E11F27 /* StatsTabItemView.swift */; };
-		A32A6D94278F422E00E11F27 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A6D93278F422E00E11F27 /* MainTabView.swift */; };
-		A32A6D96278F42B100E11F27 /* SleepNowTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A6D95278F42B100E11F27 /* SleepNowTabItemView.swift */; };
+		A32A6D94278F422E00E11F27 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A6D93278F422E00E11F27 /* MainView.swift */; };
 		A32A6D99278F8A0800E11F27 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A6D98278F8A0800E11F27 /* HealthManager.swift */; };
 		A32A6D9B278FBBB700E11F27 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A6D9A278FBBB700E11F27 /* MotionManager.swift */; };
 		A3599528278E121600571804 /* SampleWatchUI WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A3599527278E121600571804 /* SampleWatchUI WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A359952D278E121700571804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A359952C278E121700571804 /* Assets.xcassets */; };
 		A3599533278E121700571804 /* SampleWatchUI WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A3599532278E121700571804 /* SampleWatchUI WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A3599538278E121700571804 /* SampleWatchUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3599537278E121700571804 /* SampleWatchUIApp.swift */; };
-		A359953A278E121700571804 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3599539278E121700571804 /* ContentView.swift */; };
 		A359953C278E121700571804 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359953B278E121700571804 /* NotificationController.swift */; };
 		A359953E278E121700571804 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359953D278E121700571804 /* NotificationView.swift */; };
 		A3599540278E121700571804 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359953F278E121700571804 /* ComplicationController.swift */; };
 		A3599542278E121800571804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3599541278E121800571804 /* Assets.xcassets */; };
 		A3599545278E121800571804 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3599544278E121800571804 /* Preview Assets.xcassets */; };
 		A3599558278E1FE600571804 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3599557278E1FE600571804 /* HealthKit.framework */; };
-		A359955E278E2E0100571804 /* SleepLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359955D278E2E0100571804 /* SleepLogViewModel.swift */; };
+		A359955E278E2E0100571804 /* SleepEnvironmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359955D278E2E0100571804 /* SleepEnvironmentModel.swift */; };
+		A36D831227A994E70079CE48 /* LogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36D831127A994E70079CE48 /* LogModel.swift */; };
+		A36D831427A998200079CE48 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36D831327A998200079CE48 /* Date+Extensions.swift */; };
+		A37B387827A3378200DA5C86 /* StartSleepTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37B387727A3378200DA5C86 /* StartSleepTabItemView.swift */; };
 		A38006A2278F2D6D00936CFD /* SleepLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38006A1278F2D6D00936CFD /* SleepLogView.swift */; };
+		A39CE93627A6C2FC00110387 /* AppAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CE93527A6C2FC00110387 /* AppAlertView.swift */; };
 		A39F5C732790B129009175D7 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39F5C722790B129009175D7 /* ColorExtensions.swift */; };
 		A39F5C762790B26D009175D7 /* Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39F5C752790B26D009175D7 /* Styling.swift */; };
 		A39F5C7A2790B3FD009175D7 /* CircularAppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39F5C792790B3FD009175D7 /* CircularAppButton.swift */; };
+		A3A06F9927A8278400FBB56C /* AlarmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A06F9827A8278400FBB56C /* AlarmManager.swift */; };
+		A3A41BA027A6F25F00808D92 /* SleepLogCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A41B9F27A6F25F00808D92 /* SleepLogCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,9 +79,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A30D31D927A82F8900ACD832 /* URL+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		A30D31DB27A843B300ACD832 /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
 		A32A6D91278F411C00E11F27 /* StatsTabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTabItemView.swift; sourceTree = "<group>"; };
-		A32A6D93278F422E00E11F27 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		A32A6D95278F42B100E11F27 /* SleepNowTabItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepNowTabItemView.swift; sourceTree = "<group>"; };
+		A32A6D93278F422E00E11F27 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A32A6D98278F8A0800E11F27 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 		A32A6D9A278FBBB700E11F27 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		A3599523278E121500571804 /* SampleWatchUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleWatchUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,7 +90,6 @@
 		A359952C278E121700571804 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3599532278E121700571804 /* SampleWatchUI WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SampleWatchUI WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3599537278E121700571804 /* SampleWatchUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleWatchUIApp.swift; sourceTree = "<group>"; };
-		A3599539278E121700571804 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A359953B278E121700571804 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		A359953D278E121700571804 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		A359953F278E121700571804 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
@@ -93,11 +99,17 @@
 		A3599547278E121800571804 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		A3599555278E1FE600571804 /* SampleWatchUI WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SampleWatchUI WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		A3599557278E1FE600571804 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
-		A359955D278E2E0100571804 /* SleepLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepLogViewModel.swift; sourceTree = "<group>"; };
+		A359955D278E2E0100571804 /* SleepEnvironmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepEnvironmentModel.swift; sourceTree = "<group>"; };
+		A36D831127A994E70079CE48 /* LogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogModel.swift; sourceTree = "<group>"; };
+		A36D831327A998200079CE48 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		A37B387727A3378200DA5C86 /* StartSleepTabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSleepTabItemView.swift; sourceTree = "<group>"; };
 		A38006A1278F2D6D00936CFD /* SleepLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepLogView.swift; sourceTree = "<group>"; };
+		A39CE93527A6C2FC00110387 /* AppAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAlertView.swift; sourceTree = "<group>"; };
 		A39F5C722790B129009175D7 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		A39F5C752790B26D009175D7 /* Styling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styling.swift; sourceTree = "<group>"; };
 		A39F5C792790B3FD009175D7 /* CircularAppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularAppButton.swift; sourceTree = "<group>"; };
+		A3A06F9827A8278400FBB56C /* AlarmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmManager.swift; sourceTree = "<group>"; };
+		A3A41B9F27A6F25F00808D92 /* SleepLogCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepLogCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +127,11 @@
 		A32A6D97278F89F600E11F27 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				A36D831027A994D40079CE48 /* LogManager */,
 				A32A6D98278F8A0800E11F27 /* HealthManager.swift */,
 				A32A6D9A278FBBB700E11F27 /* MotionManager.swift */,
+				A3A41B9F27A6F25F00808D92 /* SleepLogCalculator.swift */,
+				A3A06F9827A8278400FBB56C /* AlarmManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -156,7 +171,7 @@
 				A39F5C742790B245009175D7 /* Application */,
 				A39F5C712790B109009175D7 /* Extensions */,
 				A32A6D97278F89F600E11F27 /* Managers */,
-				A359955A278E2A4600571804 /* ViewModels */,
+				A359955A278E2A4600571804 /* EnvironmentModel */,
 				A3599559278E2A3D00571804 /* Views */,
 				A3599555278E1FE600571804 /* SampleWatchUI WatchKit Extension.entitlements */,
 				A3599537278E121700571804 /* SampleWatchUIApp.swift */,
@@ -190,34 +205,52 @@
 		A3599559278E2A3D00571804 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A3599539278E121700571804 /* ContentView.swift */,
-				A359955F278E2EC900571804 /* ChildViews */,
-				A32A6D93278F422E00E11F27 /* MainTabView.swift */,
+				A36475CC27A32DB3001FF3EF /* Stats */,
+				A36475CB27A32DA8001FF3EF /* SleepLog */,
+				A32A6D93278F422E00E11F27 /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		A359955A278E2A4600571804 /* ViewModels */ = {
+		A359955A278E2A4600571804 /* EnvironmentModel */ = {
 			isa = PBXGroup;
 			children = (
-				A359955D278E2E0100571804 /* SleepLogViewModel.swift */,
+				A359955D278E2E0100571804 /* SleepEnvironmentModel.swift */,
 			);
-			path = ViewModels;
+			path = EnvironmentModel;
 			sourceTree = "<group>";
 		};
-		A359955F278E2EC900571804 /* ChildViews */ = {
+		A36475CB27A32DA8001FF3EF /* SleepLog */ = {
 			isa = PBXGroup;
 			children = (
-				A32A6D95278F42B100E11F27 /* SleepNowTabItemView.swift */,
 				A38006A1278F2D6D00936CFD /* SleepLogView.swift */,
-				A32A6D91278F411C00E11F27 /* StatsTabItemView.swift */,
 			);
-			path = ChildViews;
+			path = SleepLog;
+			sourceTree = "<group>";
+		};
+		A36475CC27A32DB3001FF3EF /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				A32A6D91278F411C00E11F27 /* StatsTabItemView.swift */,
+				A37B387727A3378200DA5C86 /* StartSleepTabItemView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		A36D831027A994D40079CE48 /* LogManager */ = {
+			isa = PBXGroup;
+			children = (
+				A30D31DB27A843B300ACD832 /* LogManager.swift */,
+				A36D831127A994E70079CE48 /* LogModel.swift */,
+			);
+			path = LogManager;
 			sourceTree = "<group>";
 		};
 		A39F5C712790B109009175D7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A36D831327A998200079CE48 /* Date+Extensions.swift */,
+				A30D31D927A82F8900ACD832 /* URL+Extensions.swift */,
 				A39F5C722790B129009175D7 /* ColorExtensions.swift */,
 			);
 			path = Extensions;
@@ -243,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				A39F5C792790B3FD009175D7 /* CircularAppButton.swift */,
+				A39CE93527A6C2FC00110387 /* AppAlertView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -376,19 +410,25 @@
 			files = (
 				A359953C278E121700571804 /* NotificationController.swift in Sources */,
 				A39F5C732790B129009175D7 /* ColorExtensions.swift in Sources */,
+				A36D831427A998200079CE48 /* Date+Extensions.swift in Sources */,
+				A37B387827A3378200DA5C86 /* StartSleepTabItemView.swift in Sources */,
 				A39F5C762790B26D009175D7 /* Styling.swift in Sources */,
-				A359953A278E121700571804 /* ContentView.swift in Sources */,
-				A32A6D96278F42B100E11F27 /* SleepNowTabItemView.swift in Sources */,
 				A38006A2278F2D6D00936CFD /* SleepLogView.swift in Sources */,
 				A32A6D99278F8A0800E11F27 /* HealthManager.swift in Sources */,
+				A39CE93627A6C2FC00110387 /* AppAlertView.swift in Sources */,
+				A30D31DC27A843B300ACD832 /* LogManager.swift in Sources */,
+				A36D831227A994E70079CE48 /* LogModel.swift in Sources */,
+				A3A06F9927A8278400FBB56C /* AlarmManager.swift in Sources */,
 				A3599540278E121700571804 /* ComplicationController.swift in Sources */,
+				A3A41BA027A6F25F00808D92 /* SleepLogCalculator.swift in Sources */,
 				A3599538278E121700571804 /* SampleWatchUIApp.swift in Sources */,
 				A39F5C7A2790B3FD009175D7 /* CircularAppButton.swift in Sources */,
 				A32A6D9B278FBBB700E11F27 /* MotionManager.swift in Sources */,
+				A30D31DA27A82F8900ACD832 /* URL+Extensions.swift in Sources */,
 				A359953E278E121700571804 /* NotificationView.swift in Sources */,
-				A359955E278E2E0100571804 /* SleepLogViewModel.swift in Sources */,
+				A359955E278E2E0100571804 /* SleepEnvironmentModel.swift in Sources */,
 				A32A6D92278F411C00E11F27 /* StatsTabItemView.swift in Sources */,
-				A32A6D94278F422E00E11F27 /* MainTabView.swift in Sources */,
+				A32A6D94278F422E00E11F27 /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +568,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
 				CODE_SIGN_ENTITLEMENTS = "SampleWatchUI WatchKit Extension/SampleWatchUI WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -563,6 +604,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
 				CODE_SIGN_ENTITLEMENTS = "SampleWatchUI WatchKit Extension/SampleWatchUI WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

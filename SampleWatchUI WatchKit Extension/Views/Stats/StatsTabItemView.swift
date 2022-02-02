@@ -16,7 +16,7 @@ private struct StatItemView: View {
         VStack(alignment: .leading) {
             Text(title)
                 .fontWeight(.semibold)
-                .font(.headline)
+                .font(.callout)
                 .foregroundColor(.purpleColor)
                 .padding([.leading], 4)
 
@@ -40,19 +40,27 @@ private struct StatItemView: View {
 }
 
 struct StatsTabItemView: View {
-    @EnvironmentObject var viewModel: SleepLogViewModel
-
+    @EnvironmentObject var environment: SleepEnvironmentModel
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: true) {
-            StatItemView(title: "Correct Sleep", value: "64", valueTypeText: "%")
-            StatItemView(title: "Correct Sleep", value: "64", valueTypeText: "%")
-            StatItemView(title: "Correct Sleep", value: "64", valueTypeText: "%")
+            StatItemView(title: "Correct Sleep", value: "\(environment.currentStatsPresentation.correctSleep.stringify())", valueTypeText: "%")
+            StatItemView(title: "Uninterrupted Sleep", value: "\(environment.currentStatsPresentation.uninterruptedSleep.stringify())", valueTypeText: "min(s)")
+            StatItemView(title: "Interruption (24 h)", value: "\(environment.currentStatsPresentation.numInterruptionIn24h.stringify())", valueTypeText: "time(s)")
+            StatItemView(title: "Interruption (7 d)", value: "\(environment.currentStatsPresentation.numInterruptionIn7d.stringify())", valueTypeText: "time(s)")
         }
     }
 }
 
 struct StatsTabItemView_Previews: PreviewProvider {
     static var previews: some View {
-        StatsTabItemView().environmentObject(SleepLogViewModel.init())
+        StatsTabItemView()
+    }
+}
+
+extension Int {
+    func stringify() -> String {
+        guard self != -1 else { return "-" }
+        return "\(self)"
     }
 }

@@ -41,10 +41,8 @@ private struct CircleButton: View {
     var body: some View {
         Button {
             isAnimatingTap = true
-            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(Int(configuration.animationDuration))) {
-                if let action = self.configuration.action {
-                    action()
-                }
+            if let action = self.configuration.action {
+                action()
             }
         } label: {
             Text(configuration.title)
