@@ -86,6 +86,14 @@ extension SleepEnvironmentModel {
                 guard let self = self else { return }
                 self.updateStats()
         }.store(in: &cancellables)
+
+        calculator.$interruptionTimeRange
+            .filter { $0 != nil }
+            .receive(on: DispatchQueue.main, options: nil)
+            .sink { [weak self] timeRange in
+                guard let self = self else { return }
+                self.logManager.addInterruption(seconds: timeRange ?? 0.0)
+        }.store(in: &cancellables)
     }
 }
 
@@ -123,6 +131,8 @@ extension SleepEnvironmentModel {
             alarmManager.sound()
         } else if response.alarm.contains(.vibration) {
             alarmManager.vibrate()
+        } else {
+
         }
 
     }

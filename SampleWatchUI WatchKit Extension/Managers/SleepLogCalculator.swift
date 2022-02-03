@@ -58,7 +58,7 @@ class SleepLogCalculator {
             response = SleepCalculatorResponse(alarm: [.vibration, .sound], isInterrupted: true)
         }
 
-       // response = SleepCalculatorResponse(alarm: .none, isInterrupted: true)
+
     }
 
     private func unMarkInterruption(timeStamp: Double) {
